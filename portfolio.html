@@ -14,24 +14,37 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container header-nav">
-            <nav class="page-navigation">
-                <a class="logo-name link" href="./index.html"> <span class="logo">Web</span><span
-                        class="logo-second-word">Studio</span></a>
-    
-                <ul class="page-navigation-menu list">
-                    <li><a class="page-link link" href="./index.html">Студія</a></li>
-                    <li><a class="page-link link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="page-link link" href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <ul class="header-contacts list">
-                <li><a class="address-header link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="phone-header link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+<header class="page-header">
+    <div class="container header-nav">
+        <nav class="page-navigation">
+            <a class="logo-name link" href="./index.html"> <span class="logo">Web</span><span
+                    class="logo-second-word">Studio</span></a>
+
+            <ul class="page-navigation-menu list">
+                <li><a class="page-link link" href="./index.html">Студія</a></li>
+                <li><a class="page-link link current" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="page-link link" href="#">Контакти</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="header-contacts list">
+            <li>
+                <a class="address-header link" href="mailto:info@devstudio.com">
+                    <svg aria-label="Написати на пошту" class="envelope-email">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li><a class="phone-header link" href="tel:+380961111111">
+                    <svg class="smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+
+</header>
 
 <main>
 <section class="section">
@@ -48,11 +61,14 @@
 <h2 class="visually-hidden">Наші роботи</h2>
 <ul class="menu-results list">
     <li class="results-item">
-        <img src="./images/tehnokryak1.jpg" alt="Технокряк" width="370">
-        <div class="work-description">
+        <a href="" class="results-card link">
+<img src="./images/tehnokryak1.jpg" alt="Технокряк" width="370">
+<div class="work-description">
     <h3 class="results-title">Технокряк</h3>
     <p class="results-text">Веб-сайт</p>
-        </div>
+</div>
+        </a>
+       
     </li>
     <li class="results-item">
         <img src="./images/neworlean-goldenstar2.jpg" alt="Постер Новий Орлеан проти Голден Стар" width="370">

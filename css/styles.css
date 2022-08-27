@@ -11,6 +11,8 @@
     --bck-color : #2F303A;
     --our-works-icons : #EEEEEE;
     --bckgrd-color-second : #F5F4FA;
+    --hero-bcg: #C4C4C4;
+    --media-icons: #AFB1B8;
     /* змінні для сторінки портфоліо */
     --main-black: rgba(33, 33, 33, 1);
     --secondary-grey: rgba(117, 117, 117, 1);
@@ -162,17 +164,34 @@ border-bottom: 1px solid #ECECEC;
     gap: 50px;
 }
 
-.address-header:hover,
+.address-header:hover ,
 .address-header:focus {
  color: var(--color-links);
 }
 
 .address-header {
+        display: flex;
+        align-items: center;
+
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--text-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+}
+
+.envelope-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+
+.address-header:hover .envelope-email,
+.address-header:focus .envelope-email {
+    fill: var(--color-links);
 }
 
 .phone-header:hover,
@@ -181,15 +200,37 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .phone-header {
+    display: flex;
+    align-items: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+
+.phone-header:hover .smartphone,
+.phone-header:focus .smartphone {
+    fill: var(--color-links);
+}
+
+/* hero */
 .hero{
-    background-color: var(--bck-color);
+    background-color: var(--hero-bcg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg.jpg);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -232,6 +273,26 @@ margin: 0 auto;
 }
 
 /* our benefits */
+.menu-svg-benefits {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.svg-benefits-item {
+    padding: 25px 100px;
+    background-color: var(--bckgrd-color-second);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
+.antenna {
+    width: 70px;
+    height: 70px;
+}
 
 .benefits-menu {
    display: flex;
@@ -327,6 +388,79 @@ margin: 0 auto;
     padding-bottom: 30px;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    background-color: var(--color-links);
+}
+
+.media-icon{
+ width: 20px;
+ height: 20px;
+ fill: var(--media-icons);
+}
+
+.social-media-link:hover .media-icon,
+.social-media-link:focus .media-icon {
+    fill: var(--white-color);
+}
+
+/* Постійні клієнти */
+.clients-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--black-color);
+
+        margin-bottom: 50px;
+}
+
+.clients-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--media-icons);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+}
+
+.clients-menu-item:hover,
+.clients-menu-item:focus {
+    border: 1px solid var(--color-links);
+}
+
+.clients-icon {
+   fill: var(--media-icons);
+}
+
+.clients-menu-item:hover .clients-icon,
+.clients-menu-item:focus .clients-icon {
+    fill: var(--color-links);
+}
 /* footer */
 .footer {
  background-color: var(--bck-color) ;
@@ -388,6 +522,51 @@ font-family: 'Raleway';
 .phone-footer:hover,
 .phone-footer:focus {
     color: var(--color-links);
+}
+
+.whole-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer-addresses {
+ margin-right: 70px;
+}
+
+.footer-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--white-color);
+        margin-bottom: 20px;
+}
+
+.footer-menu-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus{
+    background-color: var(--color-links);
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
 }
 
 
@@ -457,6 +636,10 @@ font-family: 'Raleway';
 
 .results-item {
     width: 370px;
+}
+
+.results-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-description {
