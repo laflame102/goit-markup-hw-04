@@ -268,15 +268,11 @@ margin: 0 auto;
 }
 
 /* our benefits */
-.menu-svg-benefits {
-    display: flex;
-    gap: 30px;
-}
-
-
 
 .svg-benefits-item {
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--bckgrd-color-second);
     margin-bottom: 30px;
     border-radius: 4px;
